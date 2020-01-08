@@ -1,0 +1,15 @@
+{
+  "name": "mywebsite",
+  "version": "1.0.0",
+  "description": "Responsive Portfolio Website",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass": "node-sass -w assets/sass/ -o assets/css/ --recursive"
+  },
+  "author": "Syazwan Jamil",
+  "license": "MIT"
+}

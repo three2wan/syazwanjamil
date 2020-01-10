@@ -372,6 +372,10 @@
 				width: auto;
 			}
 		}
+
+		&:hover {
+			opacity: 0.7;
+		}
 	}
 
 /* Button */
@@ -383,16 +387,18 @@
 	.button {
 		@include vendor('transition', 'background-color .25s ease-in-out');
 		-webkit-appearance: none;
-		display: inline-block;
+		display: block;
 		background-color: #222222;
 		color: #ffffff;
 		border: 0;
 		cursor: pointer;
 		outline: 0;
-		padding: 0.7em 1.5em 0.7em 1.5em;
+		padding: 0.1em 1em 0.1em 1em;
+		text-decoration: none;
+		
 
 		&:hover {
-			background-color: #333333;
+			background-color: #eece1a;
 		}
 
 		&:active {
@@ -412,22 +418,39 @@
 		}
 
 		&.small {
-			font-size: 0.75em;
+			font-size: 0.5em;
 		}
 
 		&.large {
-			font-size: 1.25em;
+			font-size: 1em;
 			padding: 0.5em 1.25em 0.5em 1.25em;
 		}
 
 		&.xlarge {
-			font-size: 1.5em;
+			font-size: 1.2em;
 			padding: 0.5em 1.25em 0.5em 1.25em;
 		}
 
 		@include breakpoint('<=small') {
 			width: 100%;
 		}
+	}
+
+	.btn-light {
+		@extend button;
+		background: lighten(#444, 50);
+		color: #333;
+		margin-top: 0.5rem;
+		font-size: 1rem;
+		padding: 0em 1em;
+	}
+
+	.btn-dark {
+		@extend button;
+		background: darken(#444, 50);
+		color: #fff;
+		font-size: 1rem;
+		padding: 0.1em 1em 0.1em 1em;
 	}
 
 /* List */
@@ -592,6 +615,8 @@
 					border-bottom-width: 0.5em;
 				}
 			}
+
+			
 		}
 
 		@include breakpoint('<=medium') {

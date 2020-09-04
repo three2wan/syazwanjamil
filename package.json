@@ -6,7 +6,7 @@
   "homepage": "https://three2wan.github.io/syazwanjamil",
   "dependencies": {
     "gh-pages": "^2.2.0",
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.1"
   },
   "devDependencies": {},
   "scripts": {
